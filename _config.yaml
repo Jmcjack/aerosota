@@ -1,0 +1,16 @@
+name: Aerosota
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      image: true
+
+scholar:
+  sort_by: year,month
+  order: descending
+  group_by: type
+  style: assets/bibliography/ieee-with-url.csl
+  bibliography_template: bib
+
+url: https://aerosota.com
