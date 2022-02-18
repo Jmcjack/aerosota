@@ -10,19 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 💎 setup ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7
-      - run: bundle lock
-      
-      - name: Building the website 
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
-
-      - name: 🚀 Deploying the website 
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: helaili/jekyll-action@v2
         with:
           github_token: ${{ secrets.GHACTION_TOKEN }}
-          cname: www.aerosota.com
