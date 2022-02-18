@@ -25,5 +25,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GHACTION_TOKEN }}
-          publish_dir: ./_site
           cname: www.aerosota.com
